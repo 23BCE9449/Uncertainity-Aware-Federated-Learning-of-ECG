@@ -44,62 +44,53 @@ TAb
 
 <img width="864" height="1189" alt="structure of FL Project" src="https://github.com/user-attachments/assets/cd58b8aa-5a83-4de5-8ad1-c553b734eba4" />
 
-# Repository Structure
+## Repository Structure
 
+```text
 ECG-FL-XAI/
-│
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
-│
 ├── data/
 │   ├── class_mapping.csv
 │   ├── client_statistics.csv
 │   └── sample_data/
-│
 ├── preprocessing/
 │   ├── preprocessing.py
 │   ├── label_harmonization.py
-│   ├── feature_extraction.py
-│
+│   └── feature_extraction.py
 ├── models/
 │   ├── resnet34_1d.py
 │   ├── fedavg.py
 │   ├── fedprox.py
 │   └── fedadam.py
-│
 ├── training/
 │   ├── train_fedavg.py
 │   ├── train_fedprox.py
-│   ├── train_fedadam.py
-│
+│   └── train_fedadam.py
 ├── explainability/
 │   ├── gradcam.py
-│   ├── shap_analysis.py
-│
+│   └── shap_analysis.py
 ├── uncertainty/
 │   ├── mc_dropout.py
-│
 ├── analysis/
 │   ├── consistency_analysis.py
-│   ├── correlation_analysis.py
-│
+│   └── correlation_analysis.py
 ├── results/
 │   ├── classification_results.csv
 │   ├── consistency_scores.csv
 │   ├── uncertainty_scores.csv
 │   └── correlation_results.csv
-│
 ├── figures/
 │   ├── architecture.png
 │   ├── gradcam_examples/
 │   ├── shap_examples/
-│   ├── correlation_plots/
-│
+│   └── correlation_plots/
 └── notebooks/
     ├── preprocessing.ipynb
     ├── training.ipynb
     ├── gradcam.ipynb
     ├── shap.ipynb
     └── analysis.ipynb
+```
 
