@@ -49,48 +49,20 @@ TAb
 ```text
 ECG-FL-XAI/
 ├── README.md
-├── requirements.txt
-├── LICENSE
 ├── data/
-│   ├── class_mapping.csv
-│   ├── client_statistics.csv
 │   └── sample_data/
-├── preprocessing/
-│   ├── preprocessing.py
-│   ├── label_harmonization.py
-│   └── feature_extraction.py
-├── models/
-│   ├── resnet34_1d.py
-│   ├── fedavg.py
-│   ├── fedprox.py
-│   └── fedadam.py
-├── training/
-│   ├── train_fedavg.py
-│   ├── train_fedprox.py
-│   └── train_fedadam.py
+├── preprocessing.ipnb
+|── label_harmonization.ipnb
+|── feature_extraction.ipnb
+├── federated_learning.ipnb
 ├── explainability/
-│   ├── gradcam.py
-│   └── shap_analysis.py
-├── uncertainty/
-│   ├── mc_dropout.py
-├── analysis/
-│   ├── consistency_analysis.py
-│   └── correlation_analysis.py
+│   ├── fiducial_features.ipnb
+│   └── consistency.ipnb
 ├── results/
-│   ├── classification_results.csv
-│   ├── consistency_scores.csv
-│   ├── uncertainty_scores.csv
-│   └── correlation_results.csv
-├── figures/
-│   ├── architecture.png
-│   ├── gradcam_examples/
-│   ├── shap_examples/
-│   └── correlation_plots/
-└── notebooks/
-    ├── preprocessing.ipynb
-    ├── training.ipynb
-    ├── gradcam.ipynb
-    ├── shap.ipynb
-    └── analysis.ipynb
+│   ├── central_history.csv
+│   ├── fedavg_micro_macro_full_history.csv
+│   ├── fedprox_round_history.csv
+│   └── cfedopt_round_history.csv
+├── figures
 ```
 
